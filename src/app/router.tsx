@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import { SiteLayout } from "@/components/layout/site-layout";
 
-// Cada página se carga bajo demanda (lazy). Cuando exista el panel, agregar aquí un grupo /admin
-// con su propio layout y un guard de autenticación.
+// Each page is lazy-loaded. When the admin panel exists, add an /admin group 
+// here with its own layout and an auth guard.
 export const router = createBrowserRouter([
   {
     element: <SiteLayout />,

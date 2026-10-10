@@ -3,7 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
-/** Hace scroll al ancla (#planes) o arriba al cambiar de ruta. */
+/** ScrollManager: scroll to the anchor (#plans) when the route changes */
 function ScrollManager() {
   const { pathname, hash } = useLocation();
   useEffect(() => {

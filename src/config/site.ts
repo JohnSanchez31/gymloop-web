@@ -33,11 +33,13 @@ export const siteConfig = {
     { icon: UserCog, title: "Registra mediciones", description: "Anota altura, peso, pierna, brazo y más. Tus clientes ven su evolución al instante." },
   ] satisfies Feature[],
 
-  // Poner las capturas en /public/screens
+  // Save the screenshots in the public/screens folder.
   screenshots: [
-    { src: "/screens/1.png", alt: "Modo entrenamiento de GYMPlus" },
-    { src: "/screens/2.png", alt: "Logros y niveles en GYMPlus" },
-    { src: "/screens/3.png", alt: "Historial de mediciones en GYMPlus" },
+    { src: "/screens/1.jpg", alt: "Lista de ejercicios" },
+    { src: "/screens/3.jpg", alt: "Logros y niveles en GYMPlus" },
+    { src: "/screens/2.jpg", alt: "Historial de mediciones en GYMPlus" },
+    { src: "/screens/4.jpg", alt: "Modo entrenamiento en GYMPlus" },
+    { src: "/screens/5.jpg", alt: "Mide tu propio progreso" },
   ],
 
 } as const;
@@ -48,7 +50,7 @@ export type Plan = {
   locations: string;
   users: string;
   featured?: boolean;
-  // Sin `price` = plan a medida (Enterprise)
+  // No `price` = custom pricing.
   price?: { monthlyCRC: number; annualCRC: number; monthlyUSD: number };
 };
 

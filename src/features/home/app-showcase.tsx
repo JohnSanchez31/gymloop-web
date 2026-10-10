@@ -13,7 +13,7 @@ export function AppShowcase() {
               src={src}
               alt={alt}
               loading="lazy"
-              className="h-96 w-48 shrink-0 snap-start rounded-xl border border-border bg-muted object-cover"
+              className="h-106 w-52 shrink-0 snap-start rounded-xl border border-border bg-muted object-cover"
             />
           ))}
         </div>
