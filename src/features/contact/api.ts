@@ -4,4 +4,4 @@ import type { ContactInput } from "./schema";
 
 // Contrato asumido: POST /contact -> 202
 export const useSendContact = () =>
-  useMutation({ mutationFn: (data: ContactInput) => api.post<void>("/contact", data) });
+  useMutation({ mutationFn: (data: ContactInput) => api.post<void>("/contact/", data) });
