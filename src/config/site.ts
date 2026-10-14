@@ -1,4 +1,4 @@
-import { Dumbbell, Trophy, Play, Ruler, Send, ClipboardList, UserCog, type LucideIcon } from "lucide-react";
+import { Dumbbell, Trophy, Play, Ruler, Send, ClipboardList, UserCog, Lightbulb, Zap, Sparkles, type LucideIcon } from "lucide-react";
 
 type Feature = { title: string; description: string; icon: LucideIcon };
 
@@ -10,15 +10,32 @@ export const siteConfig = {
     description:
       "Crea tus rutinas, sigue cada entrenamiento paso a paso y mira tu progreso. GYMPlus conecta a clientes y coaches en una sola app.",
   },
+  
   stores: {
     googlePlay: "https://play.google.com/store/apps/details?id=REEMPLAZAR",
     appStore: "https://apps.apple.com/app/REEMPLAZAR",
   },
   social: [
-    { label: "Instagram", href: "https://instagram.com/REEMPLAZAR" },
-    { label: "Facebook", href: "https://facebook.com/REEMPLAZAR" },
-    { label: "TikTok", href: "https://tiktok.com/@REEMPLAZAR" },
+    { label: "Instagram", href: "https://instagram.com/gympluscr" },
   ],
+
+  gymBenefits: [
+    {
+      icon: Lightbulb,
+      title: "Innovación para tu gimnasio",
+      description: "Ofrece a tus clientes una app propia con niveles, rangos y logros que hacen más motivador cada entrenamiento.",
+    },
+    {
+      icon: Zap,
+      title: "Rutinas más ágiles",
+      description: "Tus coaches reciben las solicitudes de rutina directo en la app y tus clientes también pueden crear las suyas, sin papeles ni mensajes sueltos.",
+    },
+    {
+      icon: Sparkles,
+      title: "Mejor experiencia de entrenamiento",
+      description: "Modo entrenamiento paso a paso, con indicaciones personalizadas e imágenes de cada ejercicio, y un historial de mediciones para ver el progreso.",
+    },
+  ] satisfies readonly Feature[],
 
   clientFeatures: [
     { icon: Dumbbell, title: "Tus splits y entrenamientos", description: "Crea tus propias rutinas dentro de la app o pídele una a tu coach." },

@@ -10,6 +10,14 @@ export default function HomePage() {
     <>
       <Hero />
       <FeatureSection
+        id="por-que"
+        eyebrow="Para tu gimnasio"
+        title="¿Por qué tener GYMPlus en tu gym?"
+        description="Una app que moderniza tu gimnasio, ahorra tiempo a tus coaches y mejora cada entrenamiento."
+        features={siteConfig.gymBenefits}
+        muted
+      />
+      <FeatureSection
         id="clientes"
         eyebrow="Para clientes"
         title="Todo tu entrenamiento en tu bolsillo"
