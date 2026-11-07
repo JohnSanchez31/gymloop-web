@@ -12,6 +12,9 @@ export function Footer() {
           <Link to="/privacidad" className="hover:text-primary">
             Políticas de privacidad
           </Link>
+          <Link to="/soporte" className="hover:text-primary">
+            Soporte
+          </Link>
           <Link to="/eliminar-cuenta" className="hover:text-primary">
             Eliminar cuenta
           </Link>
