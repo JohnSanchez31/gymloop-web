@@ -4,7 +4,6 @@ import { Card } from "@/components/ui/card";
 
 
 const EMAIL = "gympluscr@gmail.com";
-// Ejemplo: "+506 8888 8888". Si lo dejas vacío, la línea de teléfono no se muestra.
 const PHONE: string = "";
 const ADDRESS = "San Isidro de El General, Pérez Zeledón, San José, Costa Rica";
 
