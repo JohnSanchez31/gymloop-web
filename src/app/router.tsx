@@ -12,6 +12,7 @@ export const router = createBrowserRouter([
       { path: "eliminar-cuenta/confirmar", lazy: async () => ({ Component: (await import("@/pages/confirm-deletion-page")).default }) },
       { path: "privacidad", lazy: async () => ({ Component: (await import("@/pages/privacy-page")).default }) },
       { path: "login", lazy: async () => ({ Component: (await import("@/pages/login-page")).default }) },
+      { path: "soporte", lazy: async () => ({ Component: (await import("@/pages/support-page")).default }) },
       { path: "*", lazy: async () => ({ Component: (await import("@/pages/not-found-page")).default }) },
     ],
   },
